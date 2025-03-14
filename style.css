@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --red: #d63a25;
+    --white: #fff;
+    --dark: #1e1c2a;
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+body {
+    color: var(--dark);
+    background: black;
+}
+
+.navigation {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 158, 179, 0.973);
+    width: 100%;
+    height: 70px;
+    background: black;
+    transition: all 0.5s;
+    z-index: 99999;
+}
+
+.navigation .logo {
+    height: 60px;
+    width: auto;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: black;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li a {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+    color: rgba(0, 158, 179, 0.973);
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10%;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.home-img img {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#social_media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.social-link {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-icon {
+    width: 50px;  /* Ajuste o tamanho da imagem conforme necessário */
+    height: 50px;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.8;  /* Efeito de opacidade ao passar o mouse */
+}
+
+
+.regras-content, .historia-content {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: left;
+    padding: 20px;
+    background-color: var(--dark);
+    color: white;
+    border-radius: 10px;
+}
+
+.regras-content h1, .historia-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0, 158, 179, 0.973);
+}
+
+.regras-content ul, .historia-content ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.regras-content li, .historia-content li {
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.planilha {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #1e1c2a;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0, 158, 179, 0.2);
+}
+
+.planilha table {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid rgba(0, 158, 179, 0.973);
+}
+
+th {
+    background-color: rgba(0, 158, 179, 0.973);
+    font-weight: bold;
+    color: white;
+}
+
+td {
+    color: white;
+}
+
+#footer_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 20px 0;
+    background-color: black;
+}
+
+#footer_contacts p {
+    color: #fff;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-link {
+    font-size: 2.5rem;
+    color: white;
+    transition: all 0.3s;
+}
+
+.footer-link:hover {
+    color: rgba(0, 158, 179, 0.973);
+}
+
+#footer_copyright {
+    color: #ccc;
+    font-size: 0.7rem;  /* Tamanho de fonte menor */
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#footer_copyright a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;  /* Peso de fonte mais leve */
+    transition: color 0.3s ease;
+}
+
+#footer_copyright a:hover {
+    color: rgba(0, 158, 179, 0.973);
+}
+
+/* Estilos específicos para "by Rusty" */
+#footer_copyright span.by {
+    color: #d63a25; /* Rosa */
+    font-weight: 300;  /* Letra mais fina */
+}
+
+#footer_copyright span.rusty {
+    color: #28a745; /* Verde */
+    font-weight: 300;  /* Letra mais fina */
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        padding: 15px 20px;
+    }
+
+    .home {
+        padding: 100px 2%;
+        text-align: center;
+    }
+
+    .planilha {
+        width: 100%;
+    }
+}
+
+#instagram {
+    width: 60px; /* Aumentando para o mesmo tamanho */
+    height: 60px;/* entando para o mesmo tamanho */
+    object-fit: cover; /* Para garantir que a imagem preencha bem o espaço sem distorcer */
+}
