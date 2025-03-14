@@ -112,16 +112,15 @@ body {
 }
 
 .social-icon {
-    width: 50px;  /* Ajuste o tamanho da imagem conforme necessário */
+    width: 50px;
     height: 50px;
     object-fit: contain;
     transition: opacity 0.3s ease;
 }
 
 .social-icon:hover {
-    opacity: 0.8;  /* Efeito de opacidade ao passar o mouse */
+    opacity: 0.8;
 }
-
 
 .regras-content, .historia-content {
     max-width: 800px;
@@ -213,7 +212,7 @@ td {
 
 #footer_copyright {
     color: #ccc;
-    font-size: 0.7rem;  /* Tamanho de fonte menor */
+    font-size: 0.7rem;
     margin-top: 2rem;
     text-align: center;
 }
@@ -221,7 +220,7 @@ td {
 #footer_copyright a {
     color: #fff;
     text-decoration: none;
-    font-weight: 300;  /* Peso de fonte mais leve */
+    font-weight: 300;
     transition: color 0.3s ease;
 }
 
@@ -229,15 +228,14 @@ td {
     color: rgba(0, 158, 179, 0.973);
 }
 
-/* Estilos específicos para "by Rusty" */
 #footer_copyright span.by {
-    color: #d63a25; /* Rosa */
-    font-weight: 300;  /* Letra mais fina */
+    color: #d63a25;
+    font-weight: 300;
 }
 
 #footer_copyright span.rusty {
-    color: #28a745; /* Verde */
-    font-weight: 300;  /* Letra mais fina */
+    color: #28a745;
+    font-weight: 300;
 }
 
 @media (max-width: 768px) {
@@ -255,8 +253,58 @@ td {
     }
 }
 
-#instagram {
-    width: 60px; /* Aumentando para o mesmo tamanho */
-    height: 60px;/* entando para o mesmo tamanho */
-    object-fit: cover; /* Para garantir que a imagem preencha bem o espaço sem distorcer */
+/* Estilos para a seção de Guild Parceira */
+.parceiro {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.parceiro h2 {
+    color: rgba(0, 158, 179, 0.973);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.parceiro p {
+    color: var(--color-neutral-40);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.parceiro img {
+    width: 250px; /* Aumentando a logo da Decept */
+    height: auto;
+    margin-top: 20px;
+    object-fit: contain;
+}
+
+.social-parceiro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.social-parceiro a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.social-parceiro a:hover {
+    transform: scale(1.1);
+}
+
+/* Alterando o tamanho dos ícones sociais da seção parceiros */
+.social-parceiro .social-icon {
+    width: 50px;  /* Ajuste o tamanho da imagem para os ícones sociais dos parceiros */
+    height: 50px;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.social-parceiro .social-icon:hover {
+    opacity: 0.8;  /* Efeito de opacidade ao passar o mouse */
 }
