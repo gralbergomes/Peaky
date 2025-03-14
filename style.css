@@ -180,6 +180,9 @@ th {
 td {
     color: white;
 }
+h2 {
+    color: rgba(0, 158, 179, 0.973);
+}
 
 #footer_content {
     display: flex;
