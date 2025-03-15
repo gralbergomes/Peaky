@@ -19,6 +19,28 @@
                 <li class="nav-item"><a href="#historia">História</a></li>
                 <li class="nav-item"><a href="#membros">Membros</a></li>
                 <li class="nav-item"><a href="#parceira">Guild Parceira</a></li>
+                <li class="nav-item"><a href="#jogando">Jogando Atualmente</a></li>
+                <button id="play-button">Reproduzir Música</button>
+
+<audio id="background-music" loop>
+    <source src="music/Nick Cave The Bad Seeds - Red Right Hand (Official Video).mp3" type="audio/mp3">
+    Seu navegador não suporta áudio.
+</audio>
+
+<script>
+  // Definir o volume para 30% (mais baixo)
+  document.getElementById('background-music').volume = 0.3;
+
+  // Reproduzir a música ao clicar no botão
+  document.getElementById('play-button').addEventListener('click', function() {
+    var audio = document.getElementById('background-music');
+    audio.play().then(() => {
+      console.log('Música reproduzida com sucesso!');
+    }).catch((error) => {
+      console.error('Erro ao tentar reproduzir música:', error);
+    });
+  });
+</script>
             </ul>
             <div class="menu">
                 <span class="bar"></span>
@@ -40,34 +62,44 @@
                     <img src="img/Peaky Blinders.png" alt="Logo">
                 </div>
                 <div id="social_media">
-                    <a href="https://chat.whatsapp.com/HLtPPRVxVLP418BJGlN8jt" class="social-link" id="whatsapp" target="_blank">
+                    <a href="https://chat.whatsapp.com/HLtPPRVxVLP418BJGlN8jt" class="social-link" target="_blank">
                         <img src="img/vecteezy_whatsapp-logo-icon_21495946.png" alt="WhatsApp" class="social-icon">
                     </a>
-                    <a href="https://discord.gg/cHZV2SsDxC" class="social-link" id="discord" target="_blank">
+                    <a href="https://discord.gg/cHZV2SsDxC" class="social-link" target="_blank">
                         <img src="img/discord-logo-1-1-2048x2048.png" alt="Discord" class="social-icon">
                     </a>
-                    <a href="https://www.instagram.com/guildpeaky.rf" class="social-link" id="instagram" target="_blank">
+                    <a href="https://www.instagram.com/guildpeaky.rf" class="social-link" target="_blank">
                         <img src="img/instagram-icone-icon.png" alt="Instagram" class="social-icon">
                     </a>
-                </div>                
+                </div>   
             </div>
         </section>
 
         <section class="regras-content" id="regras">
             <h1>Regras</h1>
             <ul>
-                <li>• Respeito acima de tudo: Todos os membros devem tratar os outros com respeito e cordialidade. Desentendimentos devem ser resolvidos de forma civilizada.</li>
-                <li>• Atividade mínima: Membros devem ser ativos na guilda. Caso se ausentem por um longo período, avisem com antecedência.</li>
-                <li>• Comportamento adequado: Não serão tolerados comportamentos tóxicos, insultos, racismo ou qualquer outra forma de discriminação.</li>
-                <li>• Uso de voice chat: O uso de voice chat é permitido, mas sempre com respeito aos outros. Evite falar alto, fazer barulho excessivo ou interromper os outros.</li>
-                <li>• Ajuda entre membros: Sempre que possível, ajude os outros membros da guilda, seja em missões, quests ou dando conselhos úteis.</li>
-                <li>• Respeitar as decisões da liderança: Membros devem seguir as orientações dos líderes da guilda. Caso haja discordâncias, é possível conversar, mas de forma respeitosa.</li>
-                <li>• Participação em eventos da guilda: Incentivamos a participação em eventos organizados pela guilda. Todos devem colaborar para o crescimento da guilda.</li>
-                <li>• Proibição de trapacear ou usar cheats: O uso de programas ilegais, exploits ou trapaças é estritamente proibido e resultará em expulsão imediata.</li>
-                <li>• Divulgação de conteúdo impróprio: Não é permitido compartilhar ou divulgar conteúdo impróprio, como pornografia, violência explícita ou outros materiais ofensivos.</li>
-                <li>• Manter o nome da guilda respeitoso: O nome da guilda deve ser sempre respeitoso e não conter termos ofensivos, racistas ou discriminatórios.</li>
+                <li>Respeito acima de tudo: Todos os membros devem tratar os outros com respeito e cordialidade. Desentendimentos devem ser resolvidos de forma civilizada.
+                </li>
+                <li>Atividade mínima: Membros devem ser ativos na guilda. Caso se ausentem por um longo período, avisem com antecedência.
+                </li>
+                <li>Comportamento adequado: Não serão tolerados comportamentos tóxicos, insultos, racismo ou qualquer outra forma de discriminação.
+                </li>
+                <li>Uso de voice chat: O uso de voice chat é permitido, mas sempre com respeito aos outros. Evite falar alto, fazer barulho excessivo ou interromper os outros.
+                </li>
+                <li>Ajuda entre membros: Sempre que possível, ajude os outros membros da guilda, seja em missões, quests ou dando conselhos úteis.
+                </li>
+                <li>Respeitar as decisões da liderança: Membros devem seguir as orientações dos líderes da guilda. Caso haja discordâncias, é possível conversar, mas de forma respeitosa.
+                </li>
+                <li>Participação em eventos da guilda: Incentivamos a participação em eventos organizados pela guilda. Todos devem colaborar para o crescimento da guilda.
+                </li>
+                <li>Proibição de trapacear ou usar cheats: O uso de programas ilegais, exploits ou trapaças é estritamente proibido e resultará em expulsão imediata.
+                </li>
+                <li>Divulgação de conteúdo impróprio: Não é permitido compartilhar ou divulgar conteúdo impróprio, como pornografia, violência explícita ou outros materiais ofensivos.
+                </li>
+                <li>Manter o nome da guilda respeitoso: O nome da guilda deve ser sempre respeitoso e não conter termos ofensivos, racistas ou discriminatórios.</li>
             </ul>
         </section>
+
         <section class="historia-content" id="historia">
             <h2>História da Guild</h2>
             <p>Fundada em 2021 no servidor RF Chaos, a Peaky Blinders Guild busca sempre se destacar em servidores gringos, ajudando seus membros e promovendo o nome da guilda em todos os servidores. Totalmente brasileira e focada na união.</p>
@@ -77,10 +109,7 @@
             <h2>Membros da Guild</h2>
             <table>
                 <thead>
-                    <tr>
-                        <th>Nick</th>
-                        <th>Cargo</th>
-                    </tr>
+                    <tr><th>Nick</th><th>Cargo</th></tr>
                 </thead>
                 <tbody>
                     <tr><td>Twixx</td><td>Líder</td></tr>
@@ -105,7 +134,27 @@
                 </a>
             </div>
         </section>
-        
+
+        <section class="jogando" id="jogando">
+            <h2>Jogando Atualmente</h2>
+            <p>Servidor: <a href="https://wardenarea.com" target="_blank">wardenarea.com</a></p>
+            <img src="img/Warden logo.png" alt="Logo Warden">
+            <div class="social-jogando">
+                <a href="https://discord.com/invite/wardenarea" target="_blank">
+                    <img src="img/discord-logo-1-1-2048x2048.png" alt="Discord" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/wardenofficial_ig" target="_blank">
+                    <img src="img/instagram-icone-icon.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://api.whatsapp.com/message/REDM5XHKEMZTD1?autoload=1&app_absent=0" target="_blank">
+                    <img src="img/vecteezy_whatsapp-logo-icon_21495946.png" alt="WhatsApp" class="social-icon">
+                </a>
+                <a href="https://www.facebook.com/groups/wardenf" target="_blank">
+                    <img src="img/Facebook_logo_(square).png" alt="Facebook" class="social-icon">
+                </a>
+            </div>
+        </section>
+
         <footer>
             <div id="footer_copyright">
                 &#169; 2025 todos os direitos reservados Peaky Blinders Guild.

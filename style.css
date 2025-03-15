@@ -180,6 +180,7 @@ th {
 td {
     color: white;
 }
+
 h2 {
     color: rgba(0, 158, 179, 0.973);
 }
@@ -241,73 +242,123 @@ h2 {
     font-weight: 300;
 }
 
-@media (max-width: 768px) {
-    .navigation {
-        padding: 15px 20px;
-    }
-
-    .home {
-        padding: 100px 2%;
-        text-align: center;
-    }
-
-    .planilha {
-        width: 100%;
-    }
-}
-
-/* Estilos para a seção de Guild Parceira */
 .parceiro {
     width: 100%;
     text-align: center;
     padding: 40px 0;
-    margin-top: 40px;
-}
-
-.parceiro h2 {
-    color: rgba(0, 158, 179, 0.973);
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-
-.parceiro p {
-    color: var(--color-neutral-40);
-    font-size: 1.1rem;
-    margin-bottom: 20px;
+    color: white;
 }
 
 .parceiro img {
-    width: 250px; /* Aumentando a logo da Decept */
+    width: 200px; /* Tamanho reduzido da imagem */
     height: auto;
-    margin-top: 20px;
-    object-fit: contain;
+    margin: 20px auto;
 }
 
 .social-parceiro {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 1rem;
     margin-top: 20px;
 }
 
 .social-parceiro a {
-    display: block;
-    transition: transform 0.3s ease;
+    width: 40px; /* Ícones menores */
+    height: 40px;
+}
+
+.social-parceiro .social-icon {
+    width: 40px; /* Ícones menores */
+    height: 40px;
 }
 
 .social-parceiro a:hover {
     transform: scale(1.1);
 }
 
-/* Alterando o tamanho dos ícones sociais da seção parceiros */
-.social-parceiro .social-icon {
-    width: 50px;  /* Ajuste o tamanho da imagem para os ícones sociais dos parceiros */
-    height: 50px;
-    object-fit: contain;
-    transition: opacity 0.3s ease;
+.jogando {
+    text-align: center;
+    margin: 40px auto;
+    color: white;
 }
 
-.social-parceiro .social-icon:hover {
-    opacity: 0.8;  /* Efeito de opacidade ao passar o mouse */
+.jogando img {
+    width: 200px; /* Tamanho reduzido da imagem */
+    height: auto;
+    margin: 20px auto;
+}
+
+.social-jogando {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.social-jogando a {
+    width: 40px; /* Ícones menores */
+    height: 40px;
+}
+
+.social-jogando .social-icon {
+    width: 40px; /* Ícones menores */
+    height: 40px;
+}
+
+.social-jogando a:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        padding: 15px 20px;
+    }
+    .planilha {
+        width: 100%;
+    }
+}
+
+#play-button {
+    background-color: rgba(0, 158, 179, 0.973); /* Cor base */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px; /* Bordas arredondadas para um efeito mais suave */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-transform: uppercase; /* Transformar o texto para maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    box-shadow: 0 4px 10px rgba(0, 158, 179, 0.3); /* Sombra suave */
+}
+
+#play-button:hover {
+    background-color: rgba(2, 74, 83, 0.973); /* Cor de fundo no hover */
+    box-shadow: 0 6px 15px rgba(0, 158, 179, 0.8); /* Efeito de sombra mais forte no hover */
+    transform: translateY(-3px); /* Levanta o botão levemente no hover */
+}
+
+#play-button:active {
+    transform: translateY(1px); /* Efeito de pressionar o botão */
+    box-shadow: 0 2px 5px rgba(0, 158, 179, 0.8); /* Efeito de sombra mais suave */
+}
+
+#play-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 158, 179, 0.8); /* Efeito de foco suave */
+}
+
+#play-button i {
+    font-size: 20px; /* Tamanho do ícone */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    transition: transform 0.3s ease;
+}
+
+#play-button:hover i {
+    transform: rotate(15deg); /* Efeito de rotação do ícone no hover */
 }
