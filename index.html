@@ -7,19 +7,19 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/IMG_1074.jpg">
-    <title>Peaky Blinders Guild</title>
+    <title>PEAKY BLINDERS GUILD</title>
 </head>
 <body>
     <header>
         <nav class="navigation">
             <a href="#"><img src="img/IMG_1074-removebg-preview.png" alt="Logo Peaky Blinders" class="logo"></a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#inicio">Início</a></li>
-                <li class="nav-item"><a href="#regras">Regras</a></li>
-                <li class="nav-item"><a href="#historia">História</a></li>
-                <li class="nav-item"><a href="#membros">Membros</a></li>
-                <li class="nav-item"><a href="#parceira">Guild Parceira</a></li>
-                <li class="nav-item"><a href="#jogando">Jogando Atualmente</a></li>
+                <li class="nav-item"><a href="#inicio">INÍCIO</a></li>
+                <li class="nav-item"><a href="#regras">REGRAS</a></li>
+                <li class="nav-item"><a href="#historia">HISTÓRIA</a></li>
+                <li class="nav-item"><a href="#membros">MEMBROS</a></li>
+                <li class="nav-item"><a href="#parceira">GUILD PARCEIRA</a></li>
+                <li class="nav-item"><a href="#jogando">JOGANDO ATUALMENTE</a></li>
                 <button id="play-button">Reproduzir Música</button>
 
 <audio id="background-music" loop>
@@ -28,19 +28,22 @@
 </audio>
 
 <script>
-  // Definir o volume para 30% (mais baixo)
-  document.getElementById('background-music').volume = 0.3;
-
-  // Reproduzir a música ao clicar no botão
-  document.getElementById('play-button').addEventListener('click', function() {
     var audio = document.getElementById('background-music');
-    audio.play().then(() => {
-      console.log('Música reproduzida com sucesso!');
-    }).catch((error) => {
-      console.error('Erro ao tentar reproduzir música:', error);
+    audio.volume = 0.3;
+  
+    document.getElementById('play-button').addEventListener('click', function() {
+      if (audio.paused) {
+        audio.play().then(() => {
+          console.log('Música reproduzida com sucesso!');
+        }).catch((error) => {
+          console.error('Erro ao tentar reproduzir música:', error);
+        });
+      } else {
+        audio.pause();
+        console.log('Música pausada.');
+      }
     });
-  });
-</script>
+  </script>
             </ul>
             <div class="menu">
                 <span class="bar"></span>
@@ -59,13 +62,13 @@
             </div>
             <div class="home-content">
                 <div class="home-img">
-                    <img src="img/Peaky Blinders.png" alt="Logo">
+                    <img src="img/PEAKY BLINDERS GUILD LOGO.png" alt="Logo">
                 </div>
                 <div id="social_media">
                     <a href="https://chat.whatsapp.com/HLtPPRVxVLP418BJGlN8jt" class="social-link" target="_blank">
                         <img src="img/vecteezy_whatsapp-logo-icon_21495946.png" alt="WhatsApp" class="social-icon">
                     </a>
-                    <a href="https://discord.gg/cHZV2SsDxC" class="social-link" target="_blank">
+                    <a href="https://discord.gg/KUUdwS7KHn" class="social-link" target="_blank">
                         <img src="img/discord-logo-1-1-2048x2048.png" alt="Discord" class="social-icon">
                     </a>
                     <a href="https://www.instagram.com/guildpeaky.rf" class="social-link" target="_blank">
@@ -76,7 +79,7 @@
         </section>
 
         <section class="regras-content" id="regras">
-            <h1>Regras</h1>
+            <h1>REGRAS</h1>
             <ul>
                 <li>Respeito acima de tudo: Todos os membros devem tratar os outros com respeito e cordialidade. Desentendimentos devem ser resolvidos de forma civilizada.
                 </li>
@@ -101,12 +104,12 @@
         </section>
 
         <section class="historia-content" id="historia">
-            <h2>História da Guild</h2>
+            <h2>HISTÓRIA DA GUILD</h2>
             <p>Fundada em 2021 no servidor RF Chaos, a Peaky Blinders Guild busca sempre se destacar em servidores gringos, ajudando seus membros e promovendo o nome da guilda em todos os servidores. Totalmente brasileira e focada na união.</p>
         </section>
 
         <section class="planilha" id="membros">
-            <h2>Membros da Guild</h2>
+            <h2>MEMBROS DA GUILD</h2>
             <table>
                 <thead>
                     <tr><th>Nick</th><th>Cargo</th></tr>
@@ -116,7 +119,8 @@
                     <tr><td>RANGE</td><td>Líder / Administração</td></tr>
                     <tr><td>GREENISH</td><td>Líder / Administração</td></tr>
                     <tr><td>RJ7x</td><td>Senate</td></tr>
-                    <tr><td>Trynity</td><td>Senate</td></tr>
+                    <tr><td>Guto</td><td>Senate</td></tr>
+                    <tr><td>Ryuk</td><td>Senate</td></tr>
                 </tbody>
             </table>
         </section>
@@ -137,20 +141,17 @@
 
         <section class="jogando" id="jogando">
             <h2>Jogando Atualmente</h2>
-            <p>Servidor: <a href="https://wardenarea.com" target="_blank">wardenarea.com</a></p>
-            <img src="img/Warden logo.png" alt="Logo Warden">
-            <p>Links Úteis Warden</p>
+            <p>Servidor: <a href="https://rfvenom.com" target="_blank">rfvenom.com</a></p>
+            <img src="img/474573486_1613435042640218_4750834841833121256_n-removebg-preview.png" alt="Logo Warden">
+            <p>Links Úteis RF Venom PVP</p>
             <div class="social-jogando">
-                <a href="https://discord.com/invite/wardenarea" target="_blank">
+                <a href="https://discord.com/invite/rfvenom" target="_blank">
                     <img src="img/discord-logo-1-1-2048x2048.png" alt="Discord" class="social-icon">
                 </a>
-                <a href="https://www.instagram.com/wardenofficial_ig" target="_blank">
+                <a href="https://www.instagram.com/rfvenompvp" target="_blank">
                     <img src="img/instagram-icone-icon.png" alt="Instagram" class="social-icon">
                 </a>
-                <a href="https://api.whatsapp.com/message/REDM5XHKEMZTD1?autoload=1&app_absent=0" target="_blank">
-                    <img src="img/vecteezy_whatsapp-logo-icon_21495946.png" alt="WhatsApp" class="social-icon">
-                </a>
-                <a href="https://www.facebook.com/groups/wardenf" target="_blank">
+                <a href="https://www.facebook.com/groups/2536679539724187/?ref=share&mibextid=NSMWBT" target="_blank">
                     <img src="img/Facebook_logo_(square).png" alt="Facebook" class="social-icon">
                 </a>
             </div>
