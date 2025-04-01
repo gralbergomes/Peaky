@@ -29,7 +29,7 @@
 
 <script>
     var audio = document.getElementById('background-music');
-    audio.volume = 0.3;
+    audio.volume = 0.2;
   
     document.getElementById('play-button').addEventListener('click', function() {
       if (audio.paused) {
@@ -109,7 +109,7 @@
         </section>
 
         <section class="planilha" id="membros">
-            <h2>MEMBROS DA GUILD</h2>
+            <h2>STAFF DA GUILD</h2>
             <table>
                 <thead>
                     <tr><th>Nick</th><th>Cargo</th></tr>
@@ -124,20 +124,27 @@
                 </tbody>
             </table>
         </section>
-
-        <section class="parceiro" id="parceira">
-            <h2>GUILD PARCEIRA</h2>
-            <p>Guild Leader: Amin - xMPL</p>
-            <img src="img/Decept.png" alt="Logo Decepticons">
-            <div class="social-parceiro">
-                <a href="https://discord.gg/cCzGzEhM" target="_blank">
-                    <img src="img/discord-logo-1-1-2048x2048.png" alt="Discord" class="social-icon">
-                </a>
-                <a href="https://www.instagram.com/decepticons.rf?igsh=aDJ6dmlrcW04dmVz" target="_blank">
-                    <img src="img/instagram-icone-icon.png" alt="Instagram" class="social-icon">
-                </a>
+        <div class="texto-centro">
+        <h2>GUILD PARCEIRA</h2>
+        </div>
+        <div class="parceiro-container">
+            <div class="parceiro">
+                <p class="parceiro-info">Guild Leader: Amin - xMPL</p>
+                <img src="img/Decept.png" alt="Logo Decept">
+                <div class="social-parceiro">
+                    <a href="#"><img class="social-icon" src="img/discord-logo-1-1-2048x2048.png" alt="Discord"></a>
+                    <a href="#"><img class="social-icon" src="img/instagram-icone-icon.png" alt="Instagram"></a>
+                </div>
             </div>
-        </section>
+        
+            <div class="parceiro2">
+                <p class="parceiro-info">Guild Leader: Deja - RIAU!</p>
+                <img src="img/Douglas.png" alt="Logo Douglas">
+                <div class="social-parceiro">
+                    <a href="#"><img class="social-icon" src="img/discord-logo-1-1-2048x2048.png" alt="Discord"></a>
+                </div>
+            </div>
+        </div>
 
         <section class="jogando" id="jogando">
             <h2>JOGANDO ATUALMENTE</h2>
