@@ -208,7 +208,7 @@ h2 {
     font-size: 2.5rem;
     color: white;
     transition: all 0.3s;
-}
+} 
 
 .footer-link:hover {
     color: rgba(0, 158, 179, 0.973);
@@ -232,7 +232,7 @@ h2 {
     color: rgba(0, 158, 179, 0.973);
 }
 
-#footer_copyright span.by {
+#footer_copyrightspan.by {
     color: #d63a25;
     font-weight: 300;
 }
